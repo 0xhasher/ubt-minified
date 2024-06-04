@@ -1,0 +1,154 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Tokenised Bills</title><link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJgAAACYCAAAAAA9qX/9AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnAwMAIBAas2BiAAADtUlEQVR42u3cXUgUURQA4B3H1XRN3DCN2DQjKYI2UjMjkzLJ7E+JfoQo6CGhQKJCqB56K8EysIeU9KUHIQo0rawklJAkaMmiyEpD8JdAM/9bm93trd2I3Ttz7znjfTjnaR7mnP12vHv3zNy7Kj6LnBG20ACCEYxgBCMYwQhGMILJGQQjGHaEm/MyXvf3rp7BsVFPyLOUlDv+YzNu37S+jua3k+7fHtaJqmYqbLCxttuj73X8Z+H/KX1vKlrmePKw41WmwqNBh71O47tM2GNs5ORzQ7C/R8jzmLf2JWcmMqyz/peUsOn7X3lTcWGfH3KnosLmWwbkhE028ediwnwvuEcYLmz+8YycsI+dArM3IszdMCyQjQhzNboFsgPbnuEJQJYyU90tlB8wDA6IXPr/Ck/3asaz/JpAmIG+CStM6y74A7G1jlm/Ivjb7vrCSg9oNmFdSeX9wfta7SxLg3bFkisKI0NdDlY+Fsx27ZDY8EUa/BEl+wUrI8GySxcLVsCB2QpTREvgwJwHhUugwGKPOaSEKdsOixfBgNnPLJUSppTmArQDCLDdJxYBVIGHOS+vgigDDltTvhWkDjBM3VhVANNvwn6JxxZdXAvUB0PCYrOKi+xQxcBgttTsLTniE74BWFYe+3GoGh+/PMERA8fSA8u4FM5uusNVSJQ+mBoJ/qJ6gj1dQN+kgMEWKAhGMILJFgQjGMFkC4IRjGCyhbQwjOf87LsXHRt3gGG+uanRgVHmBjaLj7mUBArzjrha24c0r45TmWuZkLAfz+o7pqCKAcLeVz76CVcNDKY9vepijy3zYZ6Gsn5AFtg8pj0AdkHB2q8Au4BgvZU9wC4Y2PjNVmgXCMzbdA/+GRoE7F3VOLgLAuap+wDvgoA9aYacWOFgfbeGEFzisJnqNgyXMGzudh3OU23B78rpmnKET6Q+mBriok7UXEdy6djYtmlPULz2qW0MlmNox50SdAUSftHE0G9GFmbNRnDwR8eBroAtgYLFlewA3XGZ6D8U29WZfzfRcI7OEJpgo3LRXGIwRwGaSwimZK6TExaVj/isSKR00k7ETdAisF1guz9gYY6jUVLClOINiC4B2ObjNilhy845MV3cMPuFfagu3m3z9huzyD8Y5eoulMSy05ifSIuFr+2x5pzPi0B28cBSj5xKxmYZhSlh1oy9OemRhpLEYdu/hT43On51WvrKBKsJrH872FnGqoASplpN2+Rmyv8i4AlpV98IRjCCyRYEIxjBZAuCEYxgsoW0sD/JNzUGFyMFegAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0wMy0wM1QwMDozMjoxNiswMDowMI0XenEAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMDMtMDNUMDA6MzI6MTYrMDA6MDD8SsLNAAAAV3pUWHRSYXcgcHJvZmlsZSB0eXBlIGlwdGMAAHic4/IMCHFWKCjKT8vMSeVSAAMjCy5jCxMjE0uTFAMTIESANMNkAyOzVCDL2NTIxMzEHMQHy4BIoEouAOoXEXTyQjWVAAAAAElFTkSuQmCC"><link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnAwMAIBAas2BiAAABOElEQVRIx82UsUsDMRSHv1xThCpIB0EchTroIoLi5OIf4CqCm2vBzakgou5ObkInR8HBwVE6OQiK6KroUBAqyCG15RoX9S7h7vKqg31vueTl9+XlRy7w36H6WBswwSTD1pyRy4eock9Ix8oPOWCdEJOSwijTSJUbjRL40GOJufSSpi4AKGYp0E6odFySnOKVfa4IvkYRG6zFRSPIHafL3bgWCPa/5ii7Tz/giRoP2WWd+H7m0Wm1yx11LvP4ScAx2xSsakSbXn6DSUCHd4EjfXsw8ADtXVFijKI1E1GWAhTLbDJD0blIo1LACoeM/96DKfZ88jzACFtMex2yfudzTn+AhgVWHfO8ADvOuBC9VRkvQItF/+7fzablCaW/AG6Zl8o1TeukhjcaHHAjBSgqjlUhL3Sl8kGIT76HimE+9rBAAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIzLTAzLTAzVDAwOjMyOjE2KzAwOjAwjRd6cQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMy0wMy0wM1QwMDozMjoxNiswMDowMPxKws0AAABXelRYdFJhdyBwcm9maWxlIHR5cGUgaXB0YwAAeJzj8gwIcVYoKMpPy8xJ5VIAAyMLLmMLEyMTS5MUAxMgRIA0w2QDI7NUIMvY1MjEzMQcxAfLgEigSi4A6hcRdPJCNZUAAAAASUVORK5CYII="><link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnAwMAIBAas2BiAAAAvUlEQVQoz4XRMU5CYRAE4A8EEhJDQSRWJBQWNmhlbzyAhSXxLlQewYqOE2BBpKH0DDY2cgCJlfFp3lIAwfz+ydutdmezOzNLRdSy3XP3TkHk4I5nsc+GUQKHgaE1jjWhTLIwduHSlRchHJYJofSkC1oW2xPwauIXrC19/L24HVh5VORl1qt8aCR1352ewJGzvayw0AIn5gnpHcmuaz/CrRvfqdWBUqHm09jbf1aHdVPtHMmH3cPezXxVacrEBnkASMDA2sjIAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIzLTAzLTAzVDAwOjMyOjE2KzAwOjAwjRd6cQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMy0wMy0wM1QwMDozMjoxNiswMDowMPxKws0AAABXelRYdFJhdyBwcm9maWxlIHR5cGUgaXB0YwAAeJzj8gwIcVYoKMpPy8xJ5VIAAyMLLmMLEyMTS5MUAxMgRIA0w2QDI7NUIMvY1MjEzMQcxAfLgEigSi4A6hcRdPJCNZUAAAAASUVORK5CYII="><link rel="mask-icon" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDIwMDEwOTA0Ly9FTiIKICJodHRwOi8vd3d3LnczLm9yZy9UUi8yMDAxL1JFQy1TVkctMjAwMTA5MDQvRFREL3N2ZzEwLmR0ZCI+CjxzdmcgdmVyc2lvbj0iMS4wIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiB3aWR0aD0iMTYzLjAwMDAwMHB0IiBoZWlnaHQ9IjE2My4wMDAwMDBwdCIgdmlld0JveD0iMCAwIDE2My4wMDAwMDAgMTYzLjAwMDAwMCIKIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIG1lZXQiPgo8bWV0YWRhdGE+CkNyZWF0ZWQgYnkgcG90cmFjZSAxLjE0LCB3cml0dGVuIGJ5IFBldGVyIFNlbGluZ2VyIDIwMDEtMjAxNwo8L21ldGFkYXRhPgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjAwMDAwMCwxNjMuMDAwMDAwKSBzY2FsZSgwLjEwMDAwMCwtMC4xMDAwMDApIgpmaWxsPSIjMDAwMDAwIiBzdHJva2U9Im5vbmUiPgo8cGF0aCBkPSJNMTE2NSAxNDgxIGMtNzAgLTE3IC0xMDYgLTU1IC0xNTEgLTE1OCAtMjQgLTU3IC0yOSAtNjMgLTU4IC02NCAtMTcKLTEgLTIzOCAtMiAtNDkxIC0zIGwtNDYwIC0xIC0zIC01NTIgLTIgLTU1MyAyMTcgMCBjMjA4IDAgMjIwIDEgMjY5IDI0IDYwIDI4CjEwOCA4MyAxMzAgMTQ4IDggMjYgMjAgNTEgMjcgNTUgNiAzIDIyOSA3IDQ5NiA3IGw0ODYgMSAzIDU1MyAyIDU1MiAtMjE3IC0xCmMtMTIwIC0xIC0yMzEgLTQgLTI0OCAtOHogbTE4NSAtNTQ0IGwwIC0yNzMgLTI0MiAwIGMtMTc5IC0xIC0yNTAgLTQgLTI2OAotMTQgLTUyIC0yNiAtOTMgLTY0IC0xMjUgLTExNSAtMTkgLTI5IC00NyAtNjUgLTYzIC04MCBsLTI5IC0yNyAtMTYyIDEgYy05MAoxIC0xNjcgMyAtMTcxIDYgLTUgMyAtOSAxMjYgLTggMjczIGwwIDI2OSAyNDMgMCBjMjMwIDAgMjQ1IDEgMjg5IDIyIDQ3IDIzCjkwIDcwIDEyMSAxMzEgNDAgODEgMzggODAgMjM3IDgwIGwxNzggMCAwIC0yNzN6Ii8+CjwvZz4KPC9zdmc+Cg==" color="#5bbad5"><meta name="msapplication-TileColor" content="#da532c"><meta name="theme-color" content="#ffffff"><style>.init-loading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      @media (max-width: 768px) {
+        /*0-768*/
+        .svg-outer {
+          transform: scale(0.7);
+        }
+      }
+      .svg-innner {
+        width: 13.75rem;
+        height: 13.75rem;
+        background: linear-gradient(45deg, #3e3158 0%, #140d2c 100%);
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        border: 3px solid rgb(73 44 171 / 1);
+        outline-style: solid;
+        outline-color: rgb(73 44 171 / 0.3);
+      }
+      .svg-outer {
+        position: relative;
+      }
+      .svg-outer:before,
+      .logoanimation {
+        top: -4.875rem;
+        left: -4.875rem;
+        width: 23.5rem;
+        height: 23.5rem;
+      }
+      .svg-outer:before {
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        background: linear-gradient(45deg, #3e3158 0%, #140d2c 100%);
+        opacity: 0.2;
+        border: 3px solid #5d31ef;
+      }
+      .svg-outer:after {
+        content: '';
+        position: absolute;
+        top: -2.5rem;
+        left: -2.5rem;
+        width: 18.75rem;
+        height: 18.75rem;
+        background: linear-gradient(45deg, #3e3158 0%, #140d2c 100%);
+        opacity: 0.3;
+        border: 3px solid #5d31ef;
+        border-radius: 50%;
+      }
+      .logoanimation {
+        position: absolute;
+        animation: rotation 2s infinite linear;
+      }
+      .logoanimation:before,
+      .logoanimation:after {
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        border: 5px solid rgb(73 44 171 / 0.8);
+        bottom: -0.1875rem;
+        right: -0.1875rem;
+        left: -0.1875rem;
+        top: -0.1875rem;
+        clip-path: polygon(
+          calc(50% + 5px / 2) 50%,
+          calc(50% + 5px / 2) 0%,
+          100% 0%,
+          100% calc(10% - 5px / 2),
+          50% calc(50% - 5px / 2)
+        );
+      }
+      .logoanimation:before {
+        transform: rotate(180deg);
+      }
+      .init-svg {
+        transform: scale(0.9) translateY(2.1875rem) translateX(1.9rem);
+        position: absolute;
+        width: 9.1644rem;
+        height: 13.6044rem;
+      }
+      .txt-loading {
+        position: absolute;
+        bottom: -8.625rem;
+        left: 3.43275rem;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+        color: #ffffff;
+      }
+
+      @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(359deg);
+        }
+      }</style><link rel="icon" href="/favicon.ico"><script defer="defer" src="/scripts/runtime.9f56d.bundule.js"></script><script defer="defer" src="/scripts/chunk-react-libs.fb504.bundule.js"></script><script defer="defer" src="/scripts/chunk-ethers-sdk.2a793.bundule.js"></script><script defer="defer" src="/scripts/chunk-vendors.91031.bundule.js"></script><script defer="defer" src="/scripts/main.abd1b.bundule.js"></script><link href="/styles/main.0e3e5.css" rel="stylesheet"></head><body class="transition-colors duration-300 ease-in text-main bg-light font-sans theme-light w-full min-h-screen"><script>function osInfo() {
+        var ua = navigator.userAgent,
+          isWindowsPhone = /(?:Windows Phone)/.test(ua),
+          isSymbian = /(?:SymbianOS)/.test(ua) || isWindowsPhone,
+          isAndroid = /(?:Android)/.test(ua),
+          isFireFox = /(?:Firefox)/.test(ua),
+          isChrome = /(?:Chrome|CriOS)/.test(ua),
+          isTablet =
+            /(?:iPad|PlayBook)/.test(ua) ||
+            (isAndroid && !/(?:Mobile)/.test(ua)) ||
+            (isFireFox && /(?:Tablet)/.test(ua)),
+          isPhone = /(?:iPhone)/.test(ua) && !isTablet,
+          isPc = !isPhone && !isAndroid && !isSymbian;
+
+        return {
+          isTablet: isTablet,
+          isPhone: isPhone,
+          isAndroid: isAndroid,
+          isPc: isPc,
+        };
+      }
+
+      (function flexible(window, document) {
+        function resetFontSize() {
+          const { pathname, search, replace } = location;
+          const { isPc, isTablet } = osInfo();
+
+          var _clientWidth = parseInt(document.documentElement.clientWidth, 10);
+          const root = document.documentElement;
+
+          let size = 0;
+          if (isPc || isTablet) {
+            const size = (document.documentElement.clientWidth / (_clientWidth < 1536 ? 1440 : 1536)) * 14;
+            document.documentElement.style.fontSize = (size <= 14 ? 14 : size) + 'px';
+          } else {
+            size = _clientWidth;
+            document.documentElement.style.fontSize = (size / 375) * 14 + 'px';
+          }
+        }
+
+        resetFontSize();
+        window.addEventListener('pageshow', resetFontSize);
+        window.addEventListener('resize', resetFontSize);
+        window.onresize = function () {
+          const timeout = setTimeout(() => {
+            resetFontSize();
+          }, 10);
+        };
+      })(window, document);</script><div id="app"><div class="init-loading" style="opacity: 0.1" id="sc-loading"><svg t="1660112352971" class="init-svg" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4792" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200"><defs><style></style></defs><path d="M905.9 572.6L693.2 359.9c-33.4-33.4-77.9-51.8-125.4-51.8-22.8 0-44.9 4.4-65.5 12.5L374.2 192.5c-69.2-69.2-181.7-69.2-250.9 0l-8.4 8.4c-33.4 33.4-51.8 77.9-51.8 125.4s18.4 92.1 51.8 125.4l212.8 212.8c33.4 33.4 77.9 51.7 125.4 51.7 22.8 0 44.9-4.3 65.5-12.5l128.1 128.1c33.4 33.4 77.9 51.8 125.4 51.8s92-18.4 125.4-51.8l8.4-8.4c33.4-33.4 51.8-77.9 51.8-125.4 0-47.4-18.4-92-51.8-125.4z m-538.6 52.3L154.6 412.1c-22.8-22.8-35.4-53.3-35.4-85.8s12.6-63 35.4-85.8l8.4-8.4c47.3-47.3 124.3-47.3 171.6 0l118.2 118.2c-3.6 3.1-7.1 6.2-10.5 9.5l-8.4 8.4c-31.8 31.8-51 75.9-52.6 121-0.8 22.8 2.8 44.8 10.4 65.3L207.5 370.3c-22.3-22.3-22.3-58.7 0-81l4.3-4.3c22.3-22.3 58.7-22.3 81 0l74 73.9c7.3 7.3 19.1 7.3 26.4 0 7.3-7.3 7.3-19.1 0-26.4l-73.9-74c-36.9-36.9-96.9-36.9-133.8 0l-4.3 4.3c-36.9 36.9-36.9 96.9 0 133.8l199.7 199.8C398.6 614.1 423 624 448 624c4.6 0 9.2-0.3 13.8-1 20.2-3 38.5-12.2 52.9-26.6l4.2-4.3c35.8-35.8 36.7-93.3 3.1-130.4 1.4-1.8 2.9-3.5 4.5-5.1l4.2-4.3c4.4-4.4 9.5-7.7 14.8-10.4 1.1 1.8 2.4 3.5 3.9 5.1 22.6 22.5 34.7 52.5 34.3 84.3-0.4 31.8-13.4 62.1-36.5 85.1l-8.4 8.4c-22.8 22.8-53.3 35.4-85.8 35.4-32.4 0-62.9-12.5-85.7-35.3z m499 159l-8.4 8.4c-47.3 47.3-124.3 47.3-171.6 0L568.1 674c3.6-3.1 7.1-6.2 10.5-9.5l8.4-8.4c33.4-33.4 52.2-77.4 52.9-123.9 0.3-21.7-3.5-42.8-10.8-62.5l185 185c22.3 22.3 22.3 58.6 0 80.9l-4.3 4.3c-10.8 10.8-25.1 16.7-40.5 16.7-15.3 0-29.7-5.9-40.5-16.7l-78.1-78.1c-7.3-7.3-19.1-7.3-26.4 0-7.3 7.3-7.3 19.1 0 26.4l78.1 78.1c17.8 17.8 41.6 27.6 66.9 27.6 25.3 0 49.1-9.8 66.9-27.6l4.3-4.3c36.9-36.9 36.9-96.9 0-133.8L638.1 426c-36.9-36.9-96.9-36.9-133.8 0l-4.2 4.2c-17.8 17.8-27.6 41.6-27.6 66.9 0 23.7 8.7 45.9 24.4 63.3-1.4 1.8-2.7 3.7-4.4 5.3l-4.2 4.2c-4.3 4.3-9.1 7.7-14.3 10.4-1.2-1.9-2.5-3.8-4.2-5.5-22-22-33.5-51.8-32.4-83.7 1.1-31.1 14.3-61.4 36.2-83.3l8.4-8.4c22.8-22.8 53.3-35.4 85.8-35.4s63 12.6 85.8 35.4l212.8 212.8c47.2 47.4 47.2 124.4-0.1 171.7z" fill="#13227a" p-id="4793"></path></svg></div></div><script>const loadele = document.getElementById('sc-loading');
+      if (loadele) {
+        loadele.style.height = window.innerHeight + 'px';
+      }</script></body></html>
